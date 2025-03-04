@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Add Element</title>
+</head>
+
+<body>
+    <script>
+        const Div = document.createElement('div')
+        Div.className = "main"
+        Div.id = Math.round(Math.random() * 10 + 1)
+        Div.setAttribute("title", "Generated title")
+        Div.style.bakgroundColor = "green"
+        Div.style.padding = "12pz"
+        const AddText = document.createTextNode("Hardik Desai")
+        Div.appendChild(AddText)
+
+        document.body.appendChild(Div)
+    </script>
+</body>
+
+</html>
