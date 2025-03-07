@@ -1,0 +1,164 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #2d3250;
+}
+
+.Wrapper {
+    margin: 50px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, 400px);
+}
+
+.Wrapper li {
+    height: 300px;
+    list-style: none;
+    background: #676f8d;
+    border-radius: 12px;
+    padding: 15px 20px 10px;
+    cursor: pointer
+}
+
+.Add_Task_Card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Add_Task_Card Icon {}
+
+.Wrapper .Task_Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Task_Card p {
+    font-size: 22px;
+    font-weight: 500;
+    ;
+}
+
+.Task_Card span {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.Task_Card .Bottom_Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+
+}
+
+.Bottom_Content span {
+    color: #454545;
+    font-size: 12px;
+}
+
+.Bottom_Content .Options i {
+    color: #454545;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.Options i:hover {
+    font-size: 22px;
+
+}
+
+/* POPUP BOX */
+.Popup_Box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+}
+
+.Popup_Box .Popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    max-width: 400px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.Popup .Content {
+    background-color: #424769;
+    border-radius: 12px;
+}
+
+.Popup .Content header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Content header p {
+    font-weight: 500;
+    font-size: 22px;
+
+}
+
+.Content header i {
+    font-weight: 500;
+    font-size: 22px;
+    cursor: pointer;
+    color: #454545;
+}
+
+.Content form {
+    margin: 15px 25px 35px;
+}
+
+.Content form :where(input, textarea) {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 12px;
+    border: #676f8d;
+    background: #676f8d;
+}
+
+.Content form .Row {
+    margin-bottom: 20px;
+}
+form .Row label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 6px;
+
+}
+
+.Content form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.Content form button {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 100px;
+}
